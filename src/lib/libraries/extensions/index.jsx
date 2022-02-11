@@ -41,7 +41,31 @@ import makeymakeyInsetIconURL from './makeymakey/makeymakey-small.svg';
 // import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 // import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
+import qrcodeIconURL from './qrcode/qrcode.png';
+import qrcodeInsetIconURL from './qrcode/qrcode-small.svg';
+
 export default [
+    {
+        name: 'QRコード',
+        extensionId: 'qrcode',
+        collaborator: 'Sugiura Lab',
+        iconURL: qrcodeIconURL,
+        insetIconURL: qrcodeInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage='QRコードを読み取ります。{credit}'
+                description='QRコードを読み取ります。{credit}'
+                values={{
+                    credit:<div style={{fontSize: '0.6em'}}>QRコードは株式会社デンソーウェーブの登録商標です。</div>
+                }}
+                id='gui.extension.qrcodeblocks.description'
+            />
+        ),
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: false,
+        bluetoothRequired: false
+    },
     {
         name: (
             <FormattedMessage
