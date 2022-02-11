@@ -44,7 +44,28 @@ import makeymakeyInsetIconURL from './makeymakey/makeymakey-small.svg';
 import qrcodeIconURL from './qrcode/qrcode.png';
 import qrcodeInsetIconURL from './qrcode/qrcode-small.svg';
 
+import posenet2scratchIconURL from './posenet2scratch/posenet2scratch.png';
+import posenet2scratchInsetIconURL from './posenet2scratch/posenet2scratch-small.png';
+
 export default [
+    {
+        name: 'Posenet2Scratch',
+        extensionId: 'posenet2scratch',
+        collaborator: 'champierre',
+        iconURL: posenet2scratchIconURL,
+        insetIconURL: posenet2scratchInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage='PoseNet2Scratch Blocks.'
+                description='PoseNet2Scratch Blocks.'
+                id='gui.extension.posenet2scratchblocks.description'
+            />
+        ),
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        bluetoothRequired: false
+    },
     {
         name: 'QRコード',
         extensionId: 'qrcode',
