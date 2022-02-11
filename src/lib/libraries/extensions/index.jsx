@@ -47,7 +47,28 @@ import qrcodeInsetIconURL from './qrcode/qrcode-small.svg';
 import posenet2scratchIconURL from './posenet2scratch/posenet2scratch.png';
 import posenet2scratchInsetIconURL from './posenet2scratch/posenet2scratch-small.png';
 
+import ml2scratchIconURL from './ml2scratch/ml2scratch.png';
+import ml2scratchInsetIconURL from './ml2scratch/ml2scratch-small.png';
+
 export default [
+    {
+        name: 'ML2Scratch',
+        extensionId: 'ml2scratch',
+        collaborator: 'champierre',
+        iconURL: ml2scratchIconURL,
+        insetIconURL: ml2scratchInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage='ML2Scratch Blocks.'
+                description='ML2Scratch Blocks.'
+                id='gui.extension.ml2scratchblocks.description'
+            />
+        ),
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        bluetoothRequired: false
+    },
     {
         name: 'Posenet2Scratch',
         extensionId: 'posenet2scratch',
