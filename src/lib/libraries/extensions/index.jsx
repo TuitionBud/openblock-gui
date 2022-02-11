@@ -36,8 +36,8 @@ import makeymakeyInsetIconURL from './makeymakey/makeymakey-small.svg';
 // import boostConnectionSmallIconURL from './boost/boost-small.svg';
 // import boostConnectionTipIconURL from './boost/boost-button-illustration.svg';
 
-// import gdxforIconURL from './gdxfor/gdxfor.png';
-// import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
+import gdxforIconURL from './gdxfor/gdxfor.png';
+import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 // import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 // import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
@@ -54,7 +54,6 @@ export default [
     {
         name: 'ML2Scratch',
         extensionId: 'ml2scratch',
-        collaborator: 'champierre',
         iconURL: ml2scratchIconURL,
         insetIconURL: ml2scratchInsetIconURL,
         description: (
@@ -72,7 +71,6 @@ export default [
     {
         name: 'Posenet2Scratch',
         extensionId: 'posenet2scratch',
-        collaborator: 'champierre',
         iconURL: posenet2scratchIconURL,
         insetIconURL: posenet2scratchInsetIconURL,
         description: (
@@ -88,18 +86,14 @@ export default [
         bluetoothRequired: false
     },
     {
-        name: 'QRコード',
+        name: 'QR Scanner',
         extensionId: 'qrcode',
-        collaborator: 'Sugiura Lab',
         iconURL: qrcodeIconURL,
         insetIconURL: qrcodeInsetIconURL,
         description: (
             <FormattedMessage
-                defaultMessage='QRコードを読み取ります。{credit}'
-                description='QRコードを読み取ります。{credit}'
-                values={{
-                    credit:<div style={{fontSize: '0.6em'}}>QRコードは株式会社デンソーウェーブの登録商標です。</div>
-                }}
+                defaultMessage='QR Scanner'
+                description='QR Scanning extension'
                 id='gui.extension.qrcodeblocks.description'
             />
         ),
@@ -107,6 +101,60 @@ export default [
         disabled: false,
         internetConnectionRequired: false,
         bluetoothRequired: false
+    },
+    {
+        name: 'IFTTT',
+        extensionId: 'ifttt',
+        iconURL: gdxforIconURL,
+        insetIconURL: gdxforInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="IFTTT Webhook"
+                description="IFTTT Webhook extension"
+                id="gui.extension.ifttt.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: false,
+        internetConnectionRequired: true,
+        useAutoScan: false,
+    },
+    {
+        name: 'ThingSpeak',
+        extensionId: 'thingspeak',
+        iconURL: gdxforIconURL,
+        insetIconURL: gdxforInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="ThingSpeak"
+                description="ThingSpeak extension"
+                id="gui.extension.thingspeak.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: false,
+        internetConnectionRequired: true,
+        useAutoScan: false,
+    },
+    {
+        name: 'JSON',
+        extensionId: 'json',
+        iconURL: gdxforIconURL,
+        insetIconURL: gdxforInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Fetch JSON."
+                description="Fetch JSON extension"
+                id="gui.extension.json.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: false,
+        internetConnectionRequired: true,
+        useAutoScan: false
     },
     {
         name: (
